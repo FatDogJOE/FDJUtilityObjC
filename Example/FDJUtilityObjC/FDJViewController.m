@@ -7,6 +7,7 @@
 //
 
 #import "FDJViewController.h"
+#import <FDJUtilityObjC/FDJUtility.h>
 
 @interface FDJViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    if ([DeviceUtility bangDevice]) {
+        NSLog(@"此设备是刘海屏幕");
+    }else {
+        NSLog(@"此设备不是刘海屏幕");
+    }
 }
 
 - (void)didReceiveMemoryWarning
