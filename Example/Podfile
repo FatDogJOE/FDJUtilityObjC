@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'FDJUtilityObjC_Example' do
+  pod 'FDJUtilityObjC', :path => '../'
+
+  target 'FDJUtilityObjC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
