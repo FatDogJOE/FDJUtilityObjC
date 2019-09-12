@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FDJUtilityObjC'
-  s.version          = '0.1.0'
+  s.version          = '0.1.0-beta.1'
   s.summary          = 'A utility library for ObjectiveC'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/likethephoenix@163.com/FDJUtilityObjC'
+  s.homepage         = 'https://github.com/FatDogJOE/FDJUtilityObjC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Joe' => 'likethephoenix@163.com' }
-  s.source           = { :git => 'https://github.com/likethephoenix@163.com/FDJUtilityObjC.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/FatDogJOE/FDJUtilityObjC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
