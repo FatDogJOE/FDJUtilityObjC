@@ -8,6 +8,7 @@
 
 #import "FDJViewController.h"
 #import <FDJUtilityObjC/FDJUtility.h>
+#import <FDJUtilityObjC/FDJCategories.h>
 
 @interface FDJViewController ()
 
@@ -19,6 +20,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [[UIColor redColor] getImage];
+    
     if ([DeviceUtility bangDevice]) {
         NSLog(@"此设备是刘海屏幕");
     }else {

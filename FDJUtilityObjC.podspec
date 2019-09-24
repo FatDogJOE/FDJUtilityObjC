@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FDJUtilityObjC'
-  s.version          = '0.1.0-beta.1'
+  s.version          = '0.1.0-beta.2'
   s.summary          = 'A utility library for ObjectiveC'
 
 # This description is used to generate tags and improve search results.

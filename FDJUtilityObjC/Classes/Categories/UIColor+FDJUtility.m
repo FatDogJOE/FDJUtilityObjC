@@ -26,9 +26,31 @@
     
     CGRect rect = CGRectMake(0, 0, 1, 1);
     
+    UIGraphicsBeginImageContext(rect.size);
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    [self setFill];
+    CGContextSetFillColorWithColor(context, self.CGColor);
+    
+    CGContextFillRect(context, rect);
+    
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
+    
+}
+
+- (UIImage *)getImageWithSize:(CGSize)size {
+    
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    
+    UIGraphicsBeginImageContext(rect.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, self.CGColor);
     
     CGContextFillRect(context, rect);
     

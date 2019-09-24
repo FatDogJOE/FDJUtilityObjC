@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)colorWithHex:(UInt32)hex alpha:(CGFloat)alpha;
 
 - (UIImage *)getImage;
+- (UIImage *)getImageWithSize:(CGSize)size;
 
 @end
 
