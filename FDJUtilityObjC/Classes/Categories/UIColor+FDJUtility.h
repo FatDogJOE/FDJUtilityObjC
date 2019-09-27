@@ -11,11 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (FDJUtility)
 
-+ (instancetype)colorWithHex:(UInt32)hex;
-+ (instancetype)colorWithHex:(UInt32)hex alpha:(CGFloat)alpha;
++ (instancetype)fdj_ColorWithHex:(UInt32)hex;
++ (instancetype)fdj_colorWithHex:(UInt32)hex alpha:(CGFloat)alpha;
 
-- (UIImage *)getImage;
-- (UIImage *)getImageWithSize:(CGSize)size;
+- (UIImage *)fdj_getImage;
+- (UIImage *)fdj_getImageWithSize:(CGSize)size;
 
 @end
 
