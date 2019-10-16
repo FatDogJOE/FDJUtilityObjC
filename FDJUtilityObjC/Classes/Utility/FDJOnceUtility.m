@@ -38,9 +38,9 @@ static NSMutableDictionary * excutingDic;
             });
 
         }
-        return YES;
-    }else {
         return NO;
+    }else {
+        return YES;
     }
     
 }
@@ -71,9 +71,9 @@ static NSMutableDictionary * excutingDic;
             
         });
         
-        return YES;
-    }else {
         return NO;
+    }else {
+        return YES;
     }
 }
 

@@ -15,6 +15,7 @@
 #import "NSDictionary+FDJUtility.h"
 #import "NSString+FDJUtility.h"
 #import "UIColor+FDJUtility.h"
+#import "UIView+FDJUtility.h"
 #import "FDJSerialTask.h"
 #import "FDJSerialTaskObjC.h"
 #import "FDJSerialTaskQueue.h"

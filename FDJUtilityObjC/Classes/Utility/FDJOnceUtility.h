@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FDJOnceUtility : NSObject
 
-
++ (BOOL)syncOnceWithKey:(NSString *)key queue:(dispatch_queue_t)queue execute:(SyncOnceBlock)execute;
++ (BOOL)asyncOnceWithKey:(NSString *)key queue:(dispatch_queue_t)queue execute:(AsyncOnceBlock)execute;
 
 @end
 

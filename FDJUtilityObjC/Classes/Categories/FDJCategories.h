@@ -12,5 +12,6 @@
 #import "NSDictionary+FDJUtility.h"
 #import "NSString+FDJUtility.h"
 #import "UIColor+FDJUtility.h"
+#import "UIView+FDJUtility.h"
 
 #endif /* FDJCategories_h */

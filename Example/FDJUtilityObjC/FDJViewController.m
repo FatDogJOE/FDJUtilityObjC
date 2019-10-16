@@ -20,7 +20,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-   
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UIImageView * shadowView = [self.tabBarController.tabBar findView:^BOOL(UIView * _Nonnull subView) {
+            if ([subView isKindOfClass:[UIImageView class]] && subView.frame.size.height <= 1) {
+                return YES;
+            }else {
+                return NO;
+            }
+        }];
+        
+        shadowView.image = [UIImage new];
+        shadowView.backgroundColor = [UIColor clearColor];
+    });
+    
     
     if ([DeviceUtility bangDevice]) {
         NSLog(@"此设备是刘海屏幕");
