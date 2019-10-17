@@ -20,19 +20,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UIImageView * shadowView = [self.tabBarController.tabBar findView:^BOOL(UIView * _Nonnull subView) {
-            if ([subView isKindOfClass:[UIImageView class]] && subView.frame.size.height <= 1) {
-                return YES;
-            }else {
-                return NO;
-            }
-        }];
-        
-        shadowView.image = [UIImage new];
-        shadowView.backgroundColor = [UIColor clearColor];
-    });
     
+    
+    NSArray * arr1 = @[@"1",@"2",@"5",@"6",@"7",@"8",@"9",@"10"];
+    NSArray * arr2 = @[@"2",@"3",@"4",@"6",@"8",@"10"];
+    
+    NSArray * result = [arr1 repetitiveElements:arr2 primaryKey:nil];
     
     if ([DeviceUtility bangDevice]) {
         NSLog(@"此设备是刘海屏幕");

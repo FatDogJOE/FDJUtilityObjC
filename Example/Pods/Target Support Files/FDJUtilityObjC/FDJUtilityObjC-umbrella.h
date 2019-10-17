@@ -11,6 +11,7 @@
 #endif
 
 #import "FDJCategories.h"
+#import "NSArray+FDJUtility.h"
 #import "NSData+FDJUtility.h"
 #import "NSDictionary+FDJUtility.h"
 #import "NSString+FDJUtility.h"
