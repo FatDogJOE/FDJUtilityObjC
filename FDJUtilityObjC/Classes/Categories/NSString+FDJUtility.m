@@ -182,3 +182,32 @@
 }
 
 @end
+
+
+@implementation NSString (JOINT)
+
+- (NSString * (^)(NSString * ))fdj_append {
+    return ^ NSString * (NSString * append) {
+        NSString * result = [self stringByAppendingString:append];
+        return result;
+    };
+}
+
+- (NSString * (^)(NSString *, ...))fdj_appendFormat {
+    return ^ NSString * (NSString * format, ...) {
+        va_list args;
+        va_start(args, format);
+        NSString * formatedString = [[NSString alloc] initWithFormat:format arguments:args];
+        va_end(args);
+        return [self stringByAppendingString:formatedString];
+    };
+}
+
+- (NSString * (^)(NSString *, NSString *))fdj_replace {
+    return ^ NSString * (NSString * from, NSString * to) {
+        NSString * result = [self stringByReplacingOccurrencesOfString:from withString:to];
+        return result;
+    };
+}
+
+@end

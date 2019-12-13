@@ -25,4 +25,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+@interface NSString (JOINT)
+
+- (NSString * (^)(NSString * ))fdj_append;
+- (NSString * (^)(NSString *, ...))fdj_appendFormat;
+- (NSString * (^)(NSString *, NSString *))fdj_replace;
+
+@end
+
 NS_ASSUME_NONNULL_END
